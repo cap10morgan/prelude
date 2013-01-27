@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+current_branch=$(git status -sb | egrep '^##' | awk '{print $2}')
+git checkout master && git fetch origin && git merge origin/master
+git checkout $current_branch && git merge master
