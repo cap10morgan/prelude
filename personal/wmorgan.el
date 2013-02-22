@@ -58,3 +58,6 @@
                     :box nil)
 (set-face-attribute 'mode-line-inactive nil
                     :box nil)
+
+; Ruby
+(setq ruby-end-insert-newline nil)
