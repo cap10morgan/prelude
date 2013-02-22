@@ -13,7 +13,11 @@
                       (cons (concat (getenv "HOME") "/.rbenv/bin")
                             exec-path)))
 
+; Turn on evil mode (Vim navigation FTW)
+(evil-mode 1)
 
+; Set evil shift-width to 2
+(setq evil-shift-width 2)
 
 ;; Map Command-/ to comment-or-uncomment-region
 (define-key global-map (kbd "s-/") 'comment-or-uncomment-region)
@@ -39,12 +43,6 @@
 
 ; Set JavaScript indent level to 2
 (setq js-indent-level 2)
-
-; Turn on evil mode (Vim navigation FTW)
-(evil-mode 1)
-
-; Set evil shift-width to 2
-(setq evil-shift-width 2)
 
 ; Activate powerline
 (add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
