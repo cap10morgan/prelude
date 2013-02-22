@@ -34,9 +34,8 @@
      (list (line-beginning-position)
            (line-beginning-position 2)))))
 
-; Make RET indent
-(define-key global-map (kbd "RET") 'newline-and-indent)
-
+; Better auto-indenting
+(define-key global-map (kbd "RET") 'comment-indent-new-line)
 
 ; Use Source Code Pro font
 (set-face-attribute 'default nil :font "Source Code Pro-13")
