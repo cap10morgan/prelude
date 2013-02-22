@@ -1,3 +1,6 @@
+; Use Solarized dark theme
+(load-theme 'solarized-dark t)
+
 ;; Start server
 (server-start)
 
@@ -32,8 +35,6 @@
 ; Make RET indent
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
-; Use Solarized dark theme
-(load-theme 'solarized-dark t)
 
 ; Use Source Code Pro font
 (set-face-attribute 'default nil :font "Source Code Pro-13")
