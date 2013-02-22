@@ -19,6 +19,9 @@
 ; Set evil shift-width to 2
 (setq evil-shift-width 2)
 
+; Turn on enclose-mode globally
+(enclose-global-mode)
+
 ;; Map Command-/ to comment-or-uncomment-region
 (define-key global-map (kbd "s-/") 'comment-or-uncomment-region)
 (define-key global-map (kbd "C-c /") 'comment-or-uncomment-region)
