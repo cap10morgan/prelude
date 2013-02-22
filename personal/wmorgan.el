@@ -36,6 +36,7 @@
 
 ; Better auto-indenting
 (define-key global-map (kbd "RET") 'comment-indent-new-line)
+(electric-indent-mode)
 
 ; Use Source Code Pro font
 (set-face-attribute 'default nil :font "Source Code Pro-13")
